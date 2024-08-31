@@ -44,7 +44,7 @@ const Hero = () => {
                   <div className='text-lightOrange mt-[100px] md:mt-0 p-4 space-y-28'>
                     <h1 className='opasity-0 text-7xl font-bold leading-tight ml-14'>Blvck Tumbler</h1>
                     <div className='relative'>
-                      <div className='relative z-10 space-y-4'>
+                      <div className='relative z-9 space-y-4'>
                       <h1 className='text-2xl'>Blvck Tumbler</h1>
                       <h1 className='text-sm opasity-55 leading-loose'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis adipisci molestiae vel esse expedita maiores!</h1>
                       </div>
