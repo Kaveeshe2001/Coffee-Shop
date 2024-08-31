@@ -1,6 +1,7 @@
 import React from 'react';
 import BgImage from "../../assets/bg-image.png";
 import BlackCoffee from "../../assets/black.png";
+import Navbar from '../Navbar/Navbar';
 
 const bgImage = {
   backgroundImage: `url(${BgImage})`,
@@ -15,6 +16,8 @@ const Hero = () => {
         <section className='min-h-[750px] w-full'>
             <div className='container'>
                 {/* Navbar Section */}
+                <Navbar />
+
                 {/* Hero Section */}
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center min-h-[850px]'>
                   {/* text content section */}
