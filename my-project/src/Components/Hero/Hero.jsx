@@ -28,7 +28,7 @@ const Hero = () => {
             <div className='text-lightOrange mt-[100px] md:mt-0 p-4 space-y-8 md:space-y-28'>
               <motion.h1
                 initial={{ opacity: 0, y: -100 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{
                   type: "spring",
                   stiffness: 100,
@@ -57,7 +57,6 @@ const Hero = () => {
                 <div className='absolute -top-6 -left-10 w-[200px] h-[150px] md:w-[250px] md:h-[180px] bg-gray-700/25'></div>
               </motion.div>
             </div>
-            
             {/* Hero Image Section */}
             <div className='relative'>
               <motion.img
@@ -70,19 +69,20 @@ const Hero = () => {
                   delay: 0.4,
                 }}
                 src={BlackCoffee} alt='' className='relative z-40 h-[300px] md:h-[500px] lg:h-[700px] img-shadow' />
-            </div>
 
-            {/* Orange Circle Ring */}
-            <motion.div
-              initial={{ opacity: 0, y: -100 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                type: "spring",
-                stiffness: 100,
-                damping: 10,
-                delay: 0.8,
-              }}
-              className='h-[120px] w-[120px] md:h-[180px] md:w-[180px] absolute top-12 md:top-24 right-4 md:-right-16 border-primary border-[10px] md:border-[20px] rounded-full z-10'></motion.div>
+              {/* Orange Circle Ring */}
+              <motion.div
+                initial={{ opacity: 0, y: -100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 100,
+                  damping: 10,
+                  delay: 0.8,
+                }}
+                className='absolute top-[15%] left-[70%] transform -translate-x-1/2 -translate-y-1/2 h-[120px] w-[120px] md:h-[180px] md:w-[180px] border-primary border-[10px] md:border-[20px] rounded-full z-20'>
+              </motion.div>
+            </div>
 
             {/* Big Text */}
             <motion.div
