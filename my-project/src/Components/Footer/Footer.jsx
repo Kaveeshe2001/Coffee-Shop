@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaFacebook, FaGoogle, FaInstagram, FaPhone, FaTelegram } from 'react-icons/fa';
 import { FaMapLocation } from 'react-icons/fa6';
-import CreaditCards from '../../assets/website/credit-cards.webp';
+import CreditCards from '../../assets/website/credit-cards.webp';
 import { motion } from 'framer-motion';
 
 const Footer = () => {
@@ -27,8 +27,51 @@ const Footer = () => {
                 </div>
             </div>
             {/* footer links section */}
+            <div className='space-y-6'>
+                <h1 className='text-3xl font-bold'>Quick Links</h1>
+                <div className='grid grid-cols-2 gap-3'>
+                    {/* first column section */}
+                    <div>
+                        <ul className='space-y-2'>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Contact</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                    </div>
+                    {/* second column section */}
+                    <div>
+                        <ul className='space-y-2'>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Contact</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             {/* social links section */}
+            <div className='space-y-6'>
+                <h1 className='text-3xl font-bold'>Follow Us</h1>
+                <div className='flex items-center gap-3'>
+                    <FaFacebook className='text-3xl hover:scale-105 duration-300' />
+                    <FaInstagram className='text-3xl hover:scale-105 duration-300' />
+                    <FaTelegram className='text-3xl hover:scale-105 duration-300' />
+                    <FaGoogle className='text-3xl hover:scale-105 duration-300' />
+                </div>
+                <div>
+                    <h1 className='text-xl font-semibold mb-2'>
+                        Payment Methods
+                    </h1>
+                    <img src={CreditCards} alt='creditcards' className='w-[80%]' />
+                </div>
+            </div>
         </div>
+
+        {/* copyright section */}
+        <p className='text-white text-center mt-8 pt-8 border-t-2'>
+            Copyright &copy; 2024 Corder Cafe. All right reserved.
+        </p>
       </div>
     </div>
   )
