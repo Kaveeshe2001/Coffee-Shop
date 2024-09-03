@@ -10,7 +10,15 @@ const Footer = () => {
       <div className='container'>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
             {/* company details section */}
-            <div className='space-y-6'>
+            <motion.div 
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true, amount: 0.5}}
+            transition={{
+              delay: 0.2,
+              duration: 0.6,
+            }}
+            className='space-y-6'>
                 <h1 className='text-3xl font-bold uppercase'>Coders Cafe</h1>
                 <p className='text-sm max-w-[300px]'>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus esse quis tenetur.
@@ -25,9 +33,17 @@ const Footer = () => {
                         <FaMapLocation /> Pitipana, Homagama
                     </p>
                 </div>
-            </div>
+            </motion.div>
             {/* footer links section */}
-            <div className='space-y-6'>
+            <motion.div 
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true, amount: 0.5}}
+            transition={{
+              delay: 0.4,
+              duration: 0.6,
+            }}
+            className='space-y-6'>
                 <h1 className='text-3xl font-bold'>Quick Links</h1>
                 <div className='grid grid-cols-2 gap-3'>
                     {/* first column section */}
@@ -49,9 +65,17 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-            </div>
+            </motion.div>
             {/* social links section */}
-            <div className='space-y-6'>
+            <motion.div 
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true, amount: 0.5}}
+            transition={{
+              delay: 0.6,
+              duration: 0.6,
+            }}
+            className='space-y-6'>
                 <h1 className='text-3xl font-bold'>Follow Us</h1>
                 <div className='flex items-center gap-3'>
                     <FaFacebook className='text-3xl hover:scale-105 duration-300' />
@@ -65,7 +89,7 @@ const Footer = () => {
                     </h1>
                     <img src={CreditCards} alt='creditcards' className='w-[80%]' />
                 </div>
-            </div>
+            </motion.div>
         </div>
 
         {/* copyright section */}
